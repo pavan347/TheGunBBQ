@@ -1,0 +1,108 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 5px solid darkorange;
+    box-shadow: 0 5px 20px rgba(255, 140, 0, .8);
+    border-radius: 10px;
+    height: 80px;
+    padding: 5px 20px;
+}
+
+.navleft {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo {
+    width: 60px;
+    height: 60px;
+}
+
+.brand {
+    display: flex;
+    align-items: baseline;
+}
+
+.brand1 {
+    font-family: ;
+    font-size: 28px;
+    color: darkorange;
+}
+
+.brand2 {
+    font-size: 18px;
+    font-family:;
+    color: red;
+}
+
+.navright {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menubutton{
+    font-size: 30px;
+    color: darkorange;
+}
+.options{
+    display: flex;
+    font-size: 24px;
+    display: none;
+}
+.options a{
+    text-decoration: none;
+    color: darkorange;
+}
+.options div{
+    margin-right: 15px;
+}
+.options a:hover{
+   background-color:darkorange;
+    color: black;
+}
+@media screen and (min-width:992px){
+    .options{
+        display: unset;
+        display: flex;
+    }
+    .menubutton{
+        display: none;
+    }
+    .navbar{
+        height: 90px;
+        padding: 0 40px;
+    }
+    .brand1{
+        font-size: 40px;
+    }
+    .brand2{
+        font-size: 24px;
+    }
+    .logo , .logo img {
+        width: 70px;
+        height: 70px;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:991px){
+    .options{
+        display: unset;
+        display: flex;
+    }
+    .menubutton{
+        display: none;
+    }
+    .navbar{
+        padding: 0 30px;
+    }
+}

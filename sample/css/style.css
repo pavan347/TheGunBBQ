@@ -1,0 +1,202 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 5px solid darkorange;
+    box-shadow: 0 5px 20px rgba(255, 140, 0, .8);
+    border-radius: 10px;
+    height: 80px;
+    padding: 5px 20px;
+}
+
+.navleft {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    width: 60px;
+    height: 60px;
+}
+
+.brand {
+    display: flex;
+    align-items: baseline;
+}
+
+.brand1 {
+    font-family: ;
+    font-size: 28px;
+    font-weight: 700;
+    color: darkorange;
+}
+
+.brand2 {
+    font-size: 18px;
+    font-family: ;
+    font-weight: 600;
+    color: red;
+}
+
+.navright {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menubutton {
+    font-size: 30px;
+    color: darkorange;
+}
+
+.menubutton a:hover , .socialmedia i:hover{
+    cursor: pointer;
+}
+
+.options a:hover{
+    color: white;
+}
+
+.socialmedia .facebook :hover{
+    color: blue;
+}
+
+
+.socialmedia .twitter:hover{
+    color: rgb(0, 174, 255);
+}
+
+.socialmedia .instagram:hover{
+    color: rgb(251, 51, 84);
+}
+
+
+.options a {
+    text-decoration: none;
+    color: darkorange;
+    padding: 5px;
+    border-radius: 10px;
+    font-weight: 600;
+    border: 2px solid transparent;
+}
+
+.options div {
+    margin: 50px 15px;
+}
+
+.options {
+    background-color: black;
+    position: fixed;
+    float: right;
+    height: 100vh;
+    width: 100%;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    font-size: 20px;
+    transition: all 1s;
+}
+
+.options.show {
+    left: 0;
+}
+
+.options .socialmedia {
+    color: white;
+    display: flex;
+    margin-top: 220px;
+    margin-bottom: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.socialmedia >div{
+    margin: 0 30px;
+}
+.options .copyright {
+    position: fixed;
+    bottom: 10px;
+    font-size: 16px;
+    color: darkorange;
+}
+
+.img-container{
+    /* width: 100%; */
+    height: 240px;
+    margin: 70px 0px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-content: center;
+    /* overflow: hidden; */
+}
+.img-container .slider{
+    position: relative;
+    /* height: 200px; */
+}
+.img-container .slider img{
+    position: absolute;
+    /* width:cacl(100% / 3); */
+}
+
+@media screen and (min-width:768px) {
+    .options {
+        transition: none;
+        position: static;
+        float: none;
+        height: auto;
+        width: auto;
+        display: flex;
+        font-size: 24px;
+        align-items: center;
+        background-color: transparent;
+    }
+
+    .options .socialmedia {
+        display: none;
+    }
+
+    .options .copyright {
+        display: none;
+    }
+
+    .options a:hover {
+        border-color: darkorange;
+        color: darkorange;
+    }
+
+    .menubutton {
+        display: none;
+    }
+}
+
+@media screen and (min-width:992px) {
+    .navbar {
+        height: 90px;
+        padding: 0 40px;
+    }
+
+    .brand1 {
+        font-size: 40px;
+    }
+
+    .brand2 {
+        font-size: 24px;
+    }
+
+    .logo,
+    .logo img {
+        width: 70px;
+        height: 70px;
+    }
+}

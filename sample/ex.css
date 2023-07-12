@@ -1,0 +1,181 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    /* background-color: aqua; */
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 5px solid black;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, .8);
+    border-radius: 10px;
+    height: 80px;
+    padding: 5px 20px;
+}
+
+.navleft {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    width: 60px;
+    height: 60px;
+}
+
+.logo>img {
+    border-radius: 50%;
+}
+
+.brand {
+    display: flex;
+    align-items: baseline;
+    font-size: 30px;
+    color: black;
+}
+
+.navright {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menubutton a {
+    font-size: 30px;
+    color: black;
+}
+.menubutton a:hover{
+    cursor:pointer;
+}
+
+.options a {
+    text-decoration: none;
+    color: black;
+    padding: 5px;
+    border-radius: 10px;
+    font-weight: 600;
+    border: 2px solid transparent;
+}
+
+.options div {
+    margin: 50px 15px;
+}
+
+.options a:hover {
+    color: blue;
+}
+
+
+.options {
+    background-color: aqua;
+    position: fixed;
+    float: right;
+    height: 100vh;
+    width: 100%;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    font-size: 30px;
+    transition: all 1s;
+    /* transition:  background-color 0.01s; */
+}
+
+.options.show {
+    left: 0;
+}
+
+.options .socialmedia{
+    color: white;
+    display: flex;
+    margin-top:220px;
+    justify-content: center;
+    align-items: center;
+    color:black;
+}
+
+.options .copyright{
+    display: flex;
+ color: black;
+}
+
+body{
+background: linear-gradient(rgb(255,140,0,0.5) rgb(255,140,0,0.5) url(images/fire.png));
+}
+
+@media screen and (min-width:768px) {
+    .options {
+        transition: none;
+        position: static;
+        float: none;
+        height: auto;
+        width: auto;
+        display: flex;
+        font-size: 24px;
+        align-items: center;
+        background-color: transparent;
+    }
+    .options .socialmedia{
+        display: none;
+    }
+    .options .copyright{
+        display: none;
+    }
+    .options a:hover {
+        border-color: black;
+    }
+
+    .menubutton {
+        display: none;
+    }
+}
+
+@media screen and (min-width:992px) {
+    .navbar {
+        height: 90px;
+        padding: 0 40px;
+    }
+
+    .brand1 {
+        font-size: 40px;
+    }
+
+    .brand2 {
+        font-size: 24px;
+    }
+
+    .logo,
+    .logo img {
+        width: 70px;
+        height: 70px;
+    }
+}
+
+/* @media screen and (min-width:768px) and (max-width:991px) {
+    .options {
+        position: static;
+        float: none;
+        height: auto;
+        width: auto;
+        display: flex;
+        font-size: 24px;
+        align-items: center;
+        background-color: transparent;
+    }
+    .options a:hover {
+        border-color: black;
+    }
+
+    .menubutton {
+        display: none;
+    }
+
+    .navbar {
+        padding: 0 30px;
+    }
+} */
